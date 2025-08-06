@@ -1,0 +1,31 @@
+name: PipPVPZoning
+main: PippitXD.pvpzone.PvPZonePlugin
+version: 1.0.0
+api-version: 1.20
+commands:
+  setpvp:
+    description: Begin setting a PvP zone of given size (10–20).
+    usage: /setpvp <size>
+permissions:
+  pvpzone.create:
+    description: Allows creating PvP zones.
+    default: op
+commands:
+  setpvp:
+    description: Begin setting a PvP zone of given size (10–20).
+    usage: /setpvp <size>
+  cancelpvp:
+    description: Cancel your current PvP preview.
+    usage: /cancelpvp
+permissions:
+  pvpzone.create:
+    description: Allows creating PvP zones.
+    default: op
+  pvpzone.cancel:
+    description: Allows cancelling PvP zone preview.
+    default: true
+
+git remote set-url origin https://github.com/<username>/<repo>.git
+git push origin main
+depend: [WorldEdit, WorldGuard]
+softdepend: [Vault]
